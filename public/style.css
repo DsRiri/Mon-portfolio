@@ -1,0 +1,185 @@
+/* Global styles */
+body {
+  font-family: 'Arial', sans-serif;
+  padding-bottom: 100px;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f4f6;
+  color: #333;
+  line-height: 1.6;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex ;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #7367f0;
+}
+
+.hire-me-btn {
+  background-color: #7367f0;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hire-me-btn:hover {
+  background-color: #5a52c7;
+}
+
+/* Main section styles */
+.main-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+
+.intro-text {
+  max-width: 600px;
+}
+
+.intro-text h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.intro-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.download-cv {
+  display: inline-block;
+  background-color: #f3f4f6;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.download-cv:hover {
+  background-color: #ddd;
+}
+
+/* Image section */
+.image-section img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Footer styles */
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8f8f8;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000; 
+}
+
+.footer p {
+  color: #777;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: white;
+}
+
+.footer .social-icons a {
+  color: #333;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+  color: #7367f0;
+}
+
+/* Button to scroll up */
+.scroll-up-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #7367f0;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+}
+
+.scroll-up-btn.show {
+  display: block;
+}
+
+.scroll-up-btn:hover {
+  background-color: #5a52c7;
+}
+
+.developer-image {
+  transform: scale(1.5); 
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+}
